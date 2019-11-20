@@ -629,8 +629,13 @@ video {
 
 .header-bg {
   /* background: linear-gradient(175deg, #3e1468b6 0%, #350a5f 100%); */
-  background: linear-gradient(175deg, #524899ef 0%, #453e7a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#524899ef), to(#3b346d));
+  background: linear-gradient(180deg, #524899ef 0%, #3b346d 100%);
   /* background: bottom right url("../assets/man-1.svg") no-repeat; */
+}
+
+.skin-color {
+  fill: #a0616a;
 }
 
 /* #3c366b */
