@@ -2,8 +2,23 @@
 
 @tailwind components;
 
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(42, 19, 105, 1);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(42, 19, 105, 0.3);
+  background-color: #F5F5F5;
+}
+
 .header-bg {
   /* background: linear-gradient(175deg, #3e1468b6 0%, #350a5f 100%); */
+  background-color: #3b346d;
   background: linear-gradient(180deg, #524899ef 0%, #3b346d 100%);
   /* background: bottom right url("../assets/man-1.svg") no-repeat; */
 }
@@ -11,5 +26,20 @@
 .skin-color {
   fill: #a0616a;
 }
+
 /* #3c366b */
+
+.progress-bar-label {
+  @apply uppercase text-xs font-semibold text-gray-600 tracking-wide;
+}
+
+.progress-bar {
+  @apply w-full relative h-1 bg-gray-300 shadow-inner mt-1 rounded-sm;
+}
+
+.progress-bar>span {
+  @apply absolute top-0 left-0 h-1 inline-block text-gray-200 rounded-l-sm;
+  background: linear-gradient(90deg, hsla(275, 81%, 36%, 1) 0%, #3b346d 100%);
+}
+
 @tailwind utilities;
