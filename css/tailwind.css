@@ -27,10 +27,12 @@
   fill: #a0616a;
 }
 
-/* #3c366b */
+/* #3c366b 
+
+*/
 
 .progress-bar-label {
-  @apply uppercase text-xs font-semibold text-gray-600 tracking-wide;
+  @apply uppercase text-xs font-semibold text-gray-700 tracking-wide;
 }
 
 .progress-bar {
